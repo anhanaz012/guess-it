@@ -1,0 +1,15 @@
+{
+  "name": "guess-the-num",
+  "version": "1.0.0",
+  "description": "A quick & fun command line game!",
+  "license": "ISC",
+  "author": "Anha",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "guess-num": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
