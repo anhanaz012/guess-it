@@ -19,6 +19,9 @@ let guesses = 0;
 const checkAnswer = (input) => {
   let message;
   guesses = guesses + 1;
+  if (isNaN(input)) {
+    message = "Please enter a valid number";
+  }
   if (guesses >= chances && input != randomNum) {
     isGameOver = true;
     message = `Oops!You have reached the maximum number of attempts. The correct number was ${randomNum}.`;
@@ -41,7 +44,7 @@ const setChanceCount = (type) => {
     case "Medium":
       chances = 5;
       break;
-    case "Difficult":
+    case "Hard":
       chances = 3;
       break;
     default:
@@ -84,7 +87,7 @@ rl.question("Enter your choice:", (choice) => {
       break;
     }
     case "3": {
-      setChanceCount("Difficult");
+      setChanceCount("Hard");
       console.log(
         "Great! You have selected the Hard difficulty level.Let's start the game!",
       );
@@ -94,8 +97,7 @@ rl.question("Enter your choice:", (choice) => {
     }
     default: {
       console.log("Invalid choice. Please select a valid option.");
+      rl.close();
     }
   }
-
-  //   rl.close();
 });
