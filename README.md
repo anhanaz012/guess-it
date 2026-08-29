@@ -1,6 +1,7 @@
 # Guess the Number 
 
 A simple CLI game , guess a random number between 1 and 100. No AI, no frameworks.
+Idea from Roadmap.sh: https://roadmap.sh/projects/number-guessing-game
 
 ## Difficulty
 
