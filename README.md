@@ -21,7 +21,7 @@ https://github.com/user-attachments/assets/3803c8a1-b73a-4a54-b4c0-a4aff88faae4
 ## Run it
 
 ```bash
-git clone https://github.com/your-username/guess-the-num.git
+git clone https://github.com/anhanaz012/guess-it
 cd guess-the-num
 npm link
 guess-num
